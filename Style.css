@@ -1,0 +1,284 @@
+body{
+    background: #EEEEEE;
+}
+@font-face {
+    font-family: Megrim;
+    src: url(Fonts/Megrim.ttf);
+}
+#Title{
+    font-family: Megrim;
+    font-size: 78px;
+    text-align: center;
+    margin-top: -75px;
+    color: #EEEEEE;
+    text-shadow: 2px 0px 10px #999999;
+}
+#Score{
+    font-family: Megrim;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 500px;
+    font-weight: bold;
+    color: #EEEEEE;
+    text-shadow: 2px 0px 10px #999999;
+    position: relative;
+    z-index: 21;
+}
+#A1,#A2,#A3,#B1,#B2,#B3,#C1,#C2,#C3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 2px 8px 0px #999999;
+    transition-duration: 0.2s;
+    
+}
+#A1:hover,#A2:hover,#A3:hover,#B1:hover,#B2:hover,#B3:hover,#C1:hover,#C2:hover,#C3:hover{
+    box-shadow: 0px 2px 24px 0px #999999;
+    transition-duration: 0.2s;
+    transform-origin: 50%, 50%;
+    transform: scale(1.1,1.1);
+}
+
+/*Position*/
+#A1{
+    margin-left: -120px;
+    margin-top: -120px;
+    position: absolute;
+    z-index: 11;
+}
+#A2{
+    margin-left: 0px;
+    margin-top: -120px;
+    position: absolute;
+    z-index: 12;
+}
+#A3{
+    margin-left: 120px;
+    margin-top: -120px;
+    position: absolute;
+    z-index: 11;
+}
+#B1{
+    margin-left: -120px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 11;
+}
+#B2{
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 13;
+}
+#B3{
+    margin-left: 120px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 11;
+}
+#C1{
+    margin-left: -120px;
+    margin-top: 120px;
+    position: absolute;
+    z-index: 11;
+}
+#C2{
+    margin-left: 0px;
+    margin-top: 120px;
+    position: absolute;
+    z-index: 12;
+}
+#C3{
+    margin-left: 120px;
+    margin-top: 120px;
+    position: absolute;
+    z-index: 11;
+}
+/*END Position*/
+
+/*Colors*/
+.red{
+        background: #EF5350;
+}
+.green{
+        background: #66BB6A;
+}
+.blue{
+        background: #42A5F5;
+}
+.pink{
+        background: #EC407A; 
+}
+.lime{
+        background: #D4E157;
+}
+.cyan{
+        background: #26C6DA;
+}
+.purple{
+        background: #AB47BC;
+}
+.amber{
+        background: #FFCA28;
+}
+.teal{
+        background: #26A69A; 
+}
+/*END Colors*/
+
+/*Colors:Before*/
+/*.red:hover{
+    background-color: #F44336;
+}
+.green:hover{
+    background-color: #4CAF50;
+}
+.blue:hover{
+    background-color: #2196F3;
+}
+.pink:hover{
+    background-color: #E91E63;
+}
+.lime:hover{
+    background-color: #CDDC39;
+}
+.cyan:before{
+    background-color: #00BCD4;
+}
+.purple:hover{
+    background-color: #9C27B0;
+}
+.amber:hover{
+    background-color: #FFC107;
+}
+.tea:hover{
+    background-color: #009688;
+}*/
+/*END Colors:Before*/
+
+/*Text Colors*/
+.txtred{
+        color: #EF5350;
+}
+.txtgreen{
+        color: #66BB6A;
+}
+.txtblue{
+        color: #42A5F5;
+}
+.txtpink{
+        color: #EC407A; 
+}
+.txtlime{
+        color: #D4E157;
+}
+.txtcyan{
+        color: #26C6DA;
+}
+.txtpurple{
+        color: #AB47BC;
+}
+.txtamber{
+        color: #FFCA28;
+}
+.txtteal{
+        color: #26A69A; 
+}
+/*END Text Colors*/
+
+#box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#Bar{
+    position: absolute;
+    width: 99%;
+    height: 30px;
+    margin-top: 80px;
+    background-color: #EEEEEE;
+
+}
+#Timer{
+    position: absolute;
+    height: 30px;
+    width: 1%;
+/*    box-shadow: 0px 2px 8px 0px #999999;*/
+    margin-right: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#Cover{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    opacity: 0.75;
+    z-index: 20;
+    transition-duration: 0.2s;
+    
+}
+#GameOver{
+    font-family: Megrim;
+    text-align: center;
+    margin-top: -750px;
+    font-size: 90px;
+    text-shadow: 2px 0px 10px #999999;
+    z-index: 21;
+    position: relative;
+    transition-duration: 0.2s;
+}
+
+button{
+    z-index: 21;
+    position: relative;
+}
+
+#Restart{
+    z-index: 21;
+    top: -120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    width: 175px;
+    height: 75px;
+    font-family: Megrim;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 75px;
+    box-shadow: 0px 2px 8px 0px #999999;
+    color: #EEEEEE;
+    transition-duration: 0.2s;
+}
+
+
+#Restart:hover{
+    box-shadow: 0px 2px 24px 0px #999999;
+    transition-duration: 0.2s;
+    transform-origin: 50%, 50%;
+    transform: scale(1.1,1.1);
+}
+
+#Restart:active{
+    transform: scale(1,1);
+    box-shadow: 0px 1px 4px 0px #999999;
+    transition-duration: 0.05s;
+}
+
+
